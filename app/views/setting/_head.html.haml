@@ -5,6 +5,7 @@
     .head_sub_user
       ユーザー名
     .head_sub_edit
-      = link_to '編集', '/users/edit'
+      = link_to edit_setting_path(current_user) do
+        編集
           
       
