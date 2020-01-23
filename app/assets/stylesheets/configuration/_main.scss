@@ -1,0 +1,32 @@
+.main{
+  height: calc( 100vh - 150px );
+  background-color: gray;
+  .header{
+    width: 200px;
+    margin: auto;
+    height: 200px;
+    .main_upper{
+      text-align: center;
+    }
+  }
+  .explanation{
+    width: 200px;
+    margin: auto;
+    height: 200px;
+    .main_middle{
+      text-align: center;
+      margin: auto;
+    }
+  }
+  .start{
+    width: 200px;
+    margin: auto;
+    height: 200px;
+    .main_low{
+      text-align: center;
+      margin: auto;
+    }
+  }
+}
+  
+    
