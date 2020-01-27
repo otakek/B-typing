@@ -1,0 +1,16 @@
+.word
+  .word_left
+    .word_left_user
+      = current_user.name
+    .word_left_edit
+      編集
+    .word_left_return
+      = link_to '戻る' 'setting_index_path' 
+  .word_right{data: {word: {id: word.id}}}
+    .word_right_content
+      = word.content
+    .form
+      = form_for [@word] do |f|
+        = f.text_field :content, class: 'form__word'
+        = f.file_field :image, class: 'hidden'
+        = f.submit 'Send', class: 'form__submit'

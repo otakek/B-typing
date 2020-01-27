@@ -1,0 +1,51 @@
+.word{
+  height: 100vh;
+  width: 100%;
+  .word_left{
+    width: 250px;
+    background-color: #c3f8b6de;
+    .word_left_user{
+      height: 100px;
+      padding: 50px 0px 0px 50px;
+    }
+    .word_left_edit{
+      height: 100px;
+      bottom: 0;
+      padding: 50px 0px 0px 50px;
+    }
+    .word_left_return{
+      height: 100px;
+      bottom: 0;
+      padding: 50px 0px 0px 50px;
+    }
+  }
+  .word_right{
+    width: clac( 100% - 250px );
+    .word_right_content{
+      height: clac( 100vh - 100px);
+      float: right;
+    }
+    .form{
+      float: right;
+      height: 100px;
+      background-color: #9be2f8;
+      bottom: 0;
+      .form__word{
+        border: none;
+      float: left;
+      height: 50px;
+      width: calc(100% - 150px);
+      }
+      .form__submit{
+        background-color: #f1f7bc;
+      border: none;
+      color: ;
+      float: right;
+      font-size: 16px;
+      height: 50px;
+      margin-left: 15px;
+      padding: 0 30px;
+      }
+    }
+  }
+}
