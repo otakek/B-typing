@@ -11,6 +11,6 @@
       = word.content
     .form
       = form_for [@word] do |f|
-        = f.text_field :content, class: 'form__word'
+        = f.text_field :content, class: 'form__word', placeholder: '単語または文章を入力'
         = f.file_field :image, class: 'hidden'
         = f.submit 'Send', class: 'form__submit'

@@ -26,25 +26,28 @@
       float: right;
     }
     .form{
-      float: right;
-      height: 100px;
-      background-color: #9be2f8;
-      bottom: 0;
+      background-color: #92f7f7;
+      box-sizing: border-box;
+      height: 90px;
+      padding: 20px 50px 20px 40px;
       .form__word{
         border: none;
-      float: left;
-      height: 50px;
-      width: calc(100% - 150px);
+        float: left;
+        height: 50px;
+        width: calc(100% - 150px);
+      }
+      .hidden {
+        display: none;
       }
       .form__submit{
         background-color: #f1f7bc;
-      border: none;
-      color: ;
-      float: right;
-      font-size: 16px;
-      height: 50px;
-      margin-left: 15px;
-      padding: 0 30px;
+        border: none;
+        color: black;
+        float: right;
+        font-size: 16px;
+        height: 50px;
+        margin-left: 15px;
+        padding: 0 30px;
       }
     }
   }
