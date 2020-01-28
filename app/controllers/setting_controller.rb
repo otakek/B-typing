@@ -3,6 +3,7 @@ class SettingController < ApplicationController
   end
 
   def new
+    @word = Word.new
     render "/words/new"
   end
 

@@ -5,12 +5,13 @@
     .word_left_edit
       編集
     .word_left_return
-      = link_to '戻る' 'setting_index_path' 
-  .word_right{data: {word: {id: word.id}}}
+      = link_to setting_index_path(current_user) do
+        戻る 
+  .word_right
     .word_right_content
-      = word.content
+      = @word.content
     .form
       = form_for [@word] do |f|
-        = f.text_field :content, class: 'form__word', placeholder: '単語または文章を入力'
+        = f.text_field :content, class: 'form__word', placeholder: '単語または文章入力'
         = f.file_field :image, class: 'hidden'
-        = f.submit 'Send', class: 'form__submit'
+        = f.submit '保存', class: 'form__submit'

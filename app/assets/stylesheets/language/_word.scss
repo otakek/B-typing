@@ -1,6 +1,7 @@
 .word{
   height: 100vh;
   width: 100%;
+  display: flex;
   .word_left{
     width: 250px;
     background-color: #c3f8b6de;
@@ -20,10 +21,9 @@
     }
   }
   .word_right{
-    width: clac( 100% - 250px );
+    width: calc(100% - 250px);
     .word_right_content{
-      height: clac( 100vh - 100px);
-      float: right;
+      height: calc(100vh - 90px);
     }
     .form{
       background-color: #92f7f7;
@@ -34,7 +34,7 @@
         border: none;
         float: left;
         height: 50px;
-        width: calc(100% - 150px);
+        width: 500px;
       }
       .hidden {
         display: none;

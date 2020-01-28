@@ -1,6 +1,5 @@
 class WordsController < ApplicationController
   before_action :set_user
-
   def index
     @word = Word.new
     @words = @users.words.incloud(:user)
@@ -12,7 +11,7 @@ class WordsController < ApplicationController
   end
 
   def create
-    @word = @users.words.new(word_params)
+    @word = @user.word.new(set_user)
     @word.save
   end
 
@@ -23,7 +22,7 @@ class WordsController < ApplicationController
   end
 
   def set_user
-    @user = User.find(params[:user_id])
+    @user = User.find(params[:id])
   end
 
 end
